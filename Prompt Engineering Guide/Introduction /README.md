@@ -18,4 +18,22 @@ Reasons why Prompt Engineering is important
   5. <b>Frequency Penalty </b> - The 'frequency penalty' applies a penalty on the next token proportional to how many times that token already appeared in the response and prompt
   6. <b>Presence Penalty </b>- The 'presence penalty' also applies a penalty on repeated tokens but, unlike the frequency penalty, the penalty is the same for all repeated tokens. A token that appears twice and a token that appears 10 times are penalized the same. Helps prevent repeating phrases too often. Increase it to generative creative response and lower for focused content
 
-Note- General recommendation is to alter Temperature or Top_p, not both. Similarly alter the Frequency or Presence Penality, not both
+**Note**- General recommendation is to alter Temperature or Top_p, not both. Similarly alter the Frequency or Presence Penality, not both
+
+
+## Basics of Prompting
+
+`<Question>?`
+
+or
+
+```
+<Instruction>
+```
+
+or
+
+```
+Q: <Question>?
+A:
+```
