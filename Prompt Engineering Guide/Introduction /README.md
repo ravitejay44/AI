@@ -23,7 +23,9 @@ Reasons why Prompt Engineering is important
 
 ## Basics of Prompting
 
-`<Question>?`
+```
+<Question>?
+```
 
 or
 
@@ -37,3 +39,29 @@ or
 Q: <Question>?
 A:
 ```
+
+Few-shot Prompting for QA format
+
+```
+Q: <Question>?
+A: <Answer>
+Q: <Question>?
+A: <Answer>
+Q: <Question>?
+A: <Answer>
+Q: <Question>?
+A:
+```
+
+_Prompt:_
+
+```
+I like this movie // Positive
+I dont like the cake // Negative
+This is horrible // Negative
+I love this house // 
+```
+
+_Output:_
+
+```Positive```
