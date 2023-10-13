@@ -65,3 +65,26 @@ I love this house //
 _Output:_
 
 ```Positive```
+
+## Elements of a Prompt
+
+Prompt contains any of the following elements:
+* **Instruction** - Task or instruction you want the model to perform
+* **Context** - Additional context for LLM to provide better response
+* **Input Data** - Input or question we are interested to find a response for
+* **Output Indicator** - Type or format of the output
+
+## Tips for Designing Prompts
+
+* **Start Simple** - It is a iterative process so keep it simple. Break bigger tasks to simpler subtasks for better results
+* **Instruction** - Instruct the model what you want by saying "Write". "Classify", "Translate". "Order" etc., Be more specific and relevant to the context. Separate the instruction and context with some clear separator like '###'
+    _Prompt:_
+    ```
+    ### Instruction ###
+    Translate the text below to Spanish:
+    Text: "hello!"
+    ```
+    _Output:_
+    ```¡Hola!```
+* **Specificity** - Be very specific about the instruction and task. The more descriptive and detailed the prompt is, the better the results
+* **Avoid Impreciseness** - Be specific and direct
