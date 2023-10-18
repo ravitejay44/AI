@@ -93,3 +93,42 @@ Prompt contains any of the following elements:
   
 * **Specificity** - Be very specific about the instruction and task. The more descriptive and detailed the prompt is, the better the results
 * **Avoid Impreciseness** - Be specific and direct
+
+  _Not Specific Enough:_
+
+  ```
+  Explain the concept prompt engineering. Keep the explanation short, only a few sentences, and don't be too descriptive.
+  ```
+
+  _Specific:_
+
+  ```
+  Use 2-3 sentences to explain the concept of prompt engineering to a high school student.
+  ```
+  
+* **To do or Not to do** - Avoid saying what not to do but say what to do instead
+
+## Task Specific Prompts
+
+1. **Text Summarization**
+
+   _Prompt:_
+
+   ```
+   Antibiotics are a type of medication used to treat bacterial infections. They work by either killing the bacteria or preventing them from reproducing, allowing the body’s immune system to fight off the infection. Antibiotics are usually taken orally in the form of pills, capsules, or liquid solutions, or sometimes administered intravenously. They are not effective against viral infections, and using them inappropriately can lead to antibiotic resistance.
+   Explain the above in one sentence:
+   ```
+
+   _Output:_
+   ```
+   Antibiotics are medications used to treat bacterial infections by either killing the bacteria or stopping them from reproducing, but they are not effective against viruses and overuse can lead to antibiotic resistance.
+   ```
+   
+3. **Information Extraction**
+
+   _Prompt:_
+
+   ```
+   Author-contribution statements and acknowledgements in research papers should state clearly and specifically whether, and to what extent, the authors used AI technologies such as ChatGPT in the preparation of their manuscript and analysis. They should also indicate which LLMs were used. This will alert editors and reviewers to scrutinize manuscripts more carefully for potential biases, inaccuracies and improper source crediting. Likewise, scientific journals should be transparent about their use of LLMs, for example when selecting submitted manuscripts.
+Mention the large language model based product mentioned in the paragraph above:
+   ```
